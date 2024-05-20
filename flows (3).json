@@ -1,0 +1,386 @@
+[
+    {
+        "id": "73b86bde5b53d4eb",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dd4434d62cb240a8",
+        "type": "arduino-board",
+        "device": "COM3"
+    },
+    {
+        "id": "09063ed0d930616f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6572ea4f3d83937c",
+        "type": "ui_tab",
+        "name": "Dados",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "38cda31435779e58",
+        "type": "ui_group",
+        "name": "Umidade do Solo",
+        "tab": "6572ea4f3d83937c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "64b1d0f694959368",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqttdashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "915fbb258becdbbe",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "6957bfa267714fb292c57340f0c93935.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "f92af79274d768ca",
+        "clientid": "NodeRedClient",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "true",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f92af79274d768ca",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "04ae18e7b26fc8ee",
+        "type": "arduino in",
+        "z": "73b86bde5b53d4eb",
+        "name": "Umidade do Solo",
+        "pin": "0",
+        "state": "ANALOG",
+        "arduino": "dd4434d62cb240a8",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "24acfecbf5a6369f"
+            ]
+        ]
+    },
+    {
+        "id": "e805abb037cc8283",
+        "type": "debug",
+        "z": "73b86bde5b53d4eb",
+        "name": "Sensores",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "24acfecbf5a6369f",
+        "type": "delay",
+        "z": "73b86bde5b53d4eb",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "20",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "60",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "e805abb037cc8283",
+                "a5a6accf218af15f",
+                "c9976efc8b6bd294"
+            ]
+        ]
+    },
+    {
+        "id": "695dd0a54f76544f",
+        "type": "ui_gauge",
+        "z": "73b86bde5b53d4eb",
+        "name": "",
+        "group": "38cda31435779e58",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Taxa de secura do solo",
+        "label": "",
+        "format": "{{value}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#30b300",
+            "#e6e600",
+            "#d94d02"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b655b86d406024f5",
+        "type": "arduino out",
+        "z": "73b86bde5b53d4eb",
+        "name": "Relé",
+        "pin": "8",
+        "state": "OUTPUT",
+        "arduino": "dd4434d62cb240a8",
+        "x": 930,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a5a6accf218af15f",
+        "type": "function",
+        "z": "73b86bde5b53d4eb",
+        "name": "function 1",
+        "func": "var umidade = msg.payload; \nvar rele = false;\nif (umidade > 500 ) {\n    if (!rele){\n        rele = true;\n        node.send({payload: 1});\n        setTimeout(function(){\n            node.send({payload: 0});\n            rele = false;\n        }, 3000);\n    }\n} else {\nif(rele){\n    node.send({payload: 0});\n    rele = false;\n}\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 400,
+        "wires": [
+            [
+                "b7a2c24527bb6b59",
+                "b655b86d406024f5"
+            ]
+        ]
+    },
+    {
+        "id": "b7a2c24527bb6b59",
+        "type": "debug",
+        "z": "73b86bde5b53d4eb",
+        "name": "debug relé",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c9976efc8b6bd294",
+        "type": "function",
+        "z": "73b86bde5b53d4eb",
+        "name": "function 2",
+        "func": "var valorLido = msg.payload;\nvar porcentagemUmidade = ((valorLido / 1023) * 100).toFixed(2);\nmsg.payload = porcentagemUmidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 140,
+        "wires": [
+            [
+                "695dd0a54f76544f",
+                "f29742df1fb85391"
+            ]
+        ]
+    },
+    {
+        "id": "f29742df1fb85391",
+        "type": "mqtt out",
+        "z": "73b86bde5b53d4eb",
+        "name": "",
+        "topic": "umidade",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "915fbb258becdbbe",
+        "x": 880,
+        "y": 220,
+        "wires": []
+    }
+]
